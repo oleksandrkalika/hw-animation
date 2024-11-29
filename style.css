@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Soloist';
+    src: url('./Soloist3D.woff2') format('woff2');
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    background-color: #111110;
+    margin: auto;
+    overflow: hidden;
+    perspective: 200px;
+}
+
+.container {
+    width: 900px;
+    margin: auto;
+    animation: 30s mymove linear infinite;
+}
+
+@keyframes mymove {
+    0% { transform: rotateX(30deg) translateY(700px); }
+    100% { transform: rotateX(30deg) translateY(-1000px); }
+   }
+
+.title{
+    color: #f1c700;
+    font-size: 60px;
+    font-family: 'Soloist', sans-serif;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.text {
+    color: #f1c700;
+    font-size: 40px;
+    font-family: 'Soloist', sans-serif;
+    text-align: center;
+}
+
+.first {
+    margin-bottom: 100px;
+}
+
+audio {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+}
